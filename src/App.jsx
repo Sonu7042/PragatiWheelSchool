@@ -1,9 +1,7 @@
 import './App.css'
 import Header from './component/Header'
 import Footer from './component/Footer'
-// import { Outlet } from 'react-router-dom'
-import About from './pages/About'
-import Home from './pages/Home'
+import { Outlet } from 'react-router-dom'
 
 
 
@@ -13,11 +11,11 @@ function App() {
   return (
     <>
       <Header />
-      <main className='min-h-[calc(100vh-160px)] '>
-        {/* <Outlet /> */}
-        <About/>
-        {/* <Home /> */}
+
+      <main className='min-h-[calc(100vh-50px)] lg:pt-[120px] pt-[180px] '>
+        <Outlet />
       </main>
+
       <Footer />
 
     </>
