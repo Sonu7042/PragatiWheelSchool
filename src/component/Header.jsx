@@ -56,7 +56,7 @@ const Header = () => {
 
 
         <div className='flex py-2 px-5 '>
-          <button className=' px-6 py-2 rounded-full text-lg border-2 divide-black font-normal  hover:bg-blue-600 hover:text-white'>Donate Now</button>
+          <Link to={'/donate'} className=' px-6 py-2 rounded-full text-lg border-2 divide-black font-normal  hover:bg-blue-600 hover:text-white'>Donate Now</Link>
         </div>
 
 
