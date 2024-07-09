@@ -49,7 +49,7 @@ const ContactUs = () => {
 
 
        {/* details form of donaters */}
-        <div className='lg:w-[50%] w-full'>
+        <div className='lg:w-[50%] w-full mt-8'>
           <form className >
 
             <div className=''>
@@ -87,7 +87,7 @@ const ContactUs = () => {
 
 
                 <div className='w-full'>
-                  <label htmlFor="email" className='text-xl'>Phone Number <span className='text-red-600'>*</span></label>
+                  <label htmlFor="email" className='text-xl'>Phone No. <span className='text-red-600'>*</span></label>
                   <input type="text" className='border border-slate-400 w-full h-10 p-2 hover:border-red-600' required />
                   <p className='text-sm mt-2 text-slate-500'>Enter a valid phone number</p>
                 </div>
