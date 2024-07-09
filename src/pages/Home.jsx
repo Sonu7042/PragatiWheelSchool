@@ -17,6 +17,16 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [currentImage, desktopImages.length]);
 
+
+
+  const programData = [
+    { title: 'Education', img: education },
+    { title: 'Nutrition', img: education },
+    { title: 'Robotic', img: education }
+  ]
+
+
+
   return (
     <>
       <div className="w-full lg:h-[70vh] h-[40vh] flex overflow-hidden">
@@ -40,8 +50,9 @@ const Home = () => {
           </p>
         </div>
 
-        {[{ title: 'Education', img: education }, { title: 'Nutrition', img: education }, { title: 'Robotic', img: education }].map((program, index) => (
-          <div className="lg:w-[30%] w-full shadow-md rounded-tl-lg rounded-bl-lg p-8 relative h-auto" key={index}>
+        {programData.map((program, index) => (
+
+          <div className="lg:w-[30%] w-full shadow-md rounded-tl-lg rounded-bl-lg p-2 relative h-auto" key={index}>
             <img src={program.img} alt={program.title} className="w-full rounded" />
             <h2 className="text-2xl pt-2 font-medium">{program.title}</h2>
             <p className="pt-2">
